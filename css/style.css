@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+    --azul-profundo: #01080E;
+    --azul-escuro: #041832;
+    --azul-medio: #144480;
+    --azul-destaque-light: #1875E9;
+    --azul-destaque-dark: #3985D8;
+    --cinza-escuro: #222222;
+    --cinza-medio: #C5C5C5;
+    --cinza-claro: #F2F2F2;
+    --branco: #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+.cabecalho__logo{
+        padding: 15px 0px;
+        cursor: pointer;
+}
+
+.logo{
+  width: 176px;
+  height: 80px;
+}
+
+header{
+    background-color: #144480;
+    color: var(--branco);
+}
+.cabecalho__container {
+    height: 80px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    background-color: #144480;
+}
+
+.pesquisar__input{
+    padding: 8px;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 32px 0px 0px 32px;
+    font-size: 16px;
+    width: 450px;
+    text-align:left
+}
+
+.cabecalho__pesquisar{
+    padding-left: 50px;
+}
+
+.form__pesquisa {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .pesquisar__input-teclado{
+    position: absolute;
+    right: 16%;
+    top: 30%;
+}
+
+.pesquisar__btn {
+    background-color: var(--cinza-claro);
+    border: 0px;
+    border-radius: 0px 32px 32px 0px;
+    padding: 8px;
+    padding-right: 15px;
+    border-left: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.cadastro__link{
+  text-decoration: none;
+  color:var(--branco);
+ 
+}
+
+.cabecalho__atendimento{
+    margin-left:20px;
+    cursor: pointer;   
+}
+
+.cadastro__imagem{
+  text-align: center;
+  font-size:1em;
+}
+
+.cabecalho__atendimento-botao{
+    font-weight: bold;
+    color: var(--branco);
+    background-color: #144480;
+    border: none;
+    cursor: pointer;
+}
+
+
+.cabecalho__atendimento-icone{
+  width:20px;
+  height:20px;
+}
+
+.cabecalho__cadastro-icone{
+  width:40px;
+  height:50px;
+  margin-right:5px;
+  position: absolute;
+  top:15%;
+  left:8%;
+  margin-left:1em;
+  opacity: 1;
+}
+
+.cabecalho__atendimento img{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.cabecalho__atendimento-icone:hover{
+  opacity:1;
+}
+
+#cabecalho__atendimento-texto{
+  margin-left:60px; 
+  margin-top:4px ;
+  color: #041832;
+  cursor: pointer;
+}
+
+
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    background-color: #144480;
+
+  }
+
+  .dropdown-options-atendimento{
+    opacity:0;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    min-height: 280px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.25s ease-in; /* here */
+    transform: translateY(-10px); /* here */
+  }
+
+  #cabecalho__cadastro-parte1{
+    color: #041832;
+    width: 100%;
+  }
+
+  .cadastro__imagem{
+    width: 150px;
+  }
+
+  .dropdown-options-atendimento a {
+    color: black;
+    padding: 1px 15px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover 
+  {
+    background-color:var(--branco);
+    background-color: #144480;
+    transition: all linear 1s;
+    opacity: 1;
+}
+
+  .dropdown:hover .dropdown-options-atendimento {
+    height: 200px;
+    background-color:var(--branco);
+    color:#041832;
+    text-align: left;
+    padding-left: 10px;
+    transform: translateY(0); /* here */
+    opacity: 1; /* here */
+  }
+
+    
+
+    .dropdown-options-cadastro{
+      /*display: none; */
+      opacity:0;
+      margin-top: 5px;
+      position: absolute;
+      background-color:white;
+      min-width: 300px;
+      min-height: 220px;
+      overflow: auto;
+      z-index: 1;
+      transition: all 0.25s ease-in; /* here */
+       transform: translateY(-10px); /* here */
+  
+    }
+
+    #avatar{
+      vertical-align: middle;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+  
+    .dropdown-options-cadastro a {
+      color: black;
+      padding: 1px 15px;
+      text-decoration: none;
+      display: block;
+    
+    }
+    .dropdown:hover .dropdown-options-cadastro {
+      /*display: block;*/
+      background-color:white;
+      transform: translateY(0); /* here */
+      opacity: 1; /* here */
+    }
+
+    .cabecalho__cadastro{
+      margin-left:90px; 
+    }
+
+    #cabecalho__cadastro-parte1{
+      height: 100%;
+    }
+    
+    #cadastro{
+      display:flex;
+      justify-content: space-between;
+    }
+
+    #cadastro a{
+      border:1px solid green;
+      background-color:green;
+      border-radius:50px;
+      color: #f1f1f1;
+    }
+  
+    
+
+
+
